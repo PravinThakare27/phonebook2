@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: ${DB_DRIVER_NAME:com.mysql.cj.jdbc.Driver}
+#    jdbc:mysql://${DB_HOST:localhost}/${DB_NAME:sbms}?allowPublicKeyRetrieval=true&useSSL=false
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/${DB_DATABSENAME:newdata}?allowPublicKeyRetrieval=true&useSSL=false
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:Pthakare@27}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/newdata
+#    username: root
+#    password: Pthakare@27
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
